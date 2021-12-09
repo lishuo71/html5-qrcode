@@ -16,30 +16,30 @@
 export class Html5QrcodeStrings {
 
     public static codeParseError(exception: any): string {
-        return `QR code parse error, error = ${exception}`;
+        return `二维码解析出现错误，错误 = ${exception}`;
     }
 
     public static errorGettingUserMedia(error: any): string {
-        return `Error getting userMedia, error = ${error}`;
+        return `获取用户媒体出现错误，错误 = ${error}`;
     }
 
     public static onlyDeviceSupportedError(): string {
-        return "The device doesn't support navigator.mediaDevices , only "
-        + "supported cameraIdOrConfig in this case is deviceId parameter "
+        return "本设备不支持navigator.mediaDevices , 只有 "
+        + "支持cameraIdOrConfig in this case is deviceId parameter "
         + "(string).";
     }
 
     public static cameraStreamingNotSupported(): string {
-        return "Camera streaming not supported by the browser.";
+        return "本浏览器不支持摄像头数据流。";
     }
 
     public static unableToQuerySupportedDevices(): string {
-        return "Unable to query supported devices, unknown error.";
+        return "无法查询到支持的设备，出现未知错误。";
     }
 
     public static insecureContextCameraQueryError(): string {
-        return "Camera access is only supported in secure context like https "
-        + "or localhost.";
+        return "只有在安全环境如https "
+        + "或者localhost下才能使用。";
     }
 }
 
@@ -51,55 +51,55 @@ export class Html5QrcodeStrings {
 export class Html5QrcodeScannerStrings {
 
     public static scanningStatus(): string {
-        return "Scanning";
+        return  "扫描中";
     }
 
     public static idleStatus(): string {
-        return "Idle";
+        return "空闲";
     }
 
     public static errorStatus(): string {
-        return "Error";
+        return "错误";
     }
 
     public static permissionStatus(): string {
-        return "Permission";
+        return "许可";
     }
 
     public static noCameraFoundErrorStatus(): string {
-        return "No Cameras";
+        return "没有摄像头";
     }
 
     public static lastMatch(decodedText: string): string {
-        return `Last Match: ${decodedText}`;
+        return `最新匹配: ${decodedText}`;
     }
 
     public static codeScannerTitle(): string {
-        return "Code Scanner";
+        return "二维码扫描";
     }
 
     public static cameraPermissionTitle(): string {
-        return "Request Camera Permissions";
+        return "请求摄像头使用权限";
     }
 
     public static cameraPermissionRequesting(): string {
-        return "Requesting camera permissions...";
+        return "请求使用摄像头权限中...";
     }
 
     public static noCameraFound(): string {
-        return "No camera found";
+        return "没有找到摄像头";
     }
 
     public static scanButtonStopScanningText(): string {
-        return "Stop Scanning";
+        return "停止扫码";
     }
 
     public static scanButtonStartScanningText(): string {
-        return "Start Scanning";
+        return "开始扫码";
     }
 
     public static scanButtonScanningStarting(): string {
-        return "Launching Camera...";
+        return "启动摄像头...";
     }
 
     /**
@@ -108,7 +108,7 @@ export class Html5QrcodeScannerStrings {
      * This will be used to switch to file based scanning.
      */
     public static textIfCameraScanSelected(): string {
-        return "Scan an Image File";
+        return "扫描手机图片";
     }
 
     /**
@@ -117,11 +117,11 @@ export class Html5QrcodeScannerStrings {
      * This will be used to switch to camera based scanning.
      */
     public static textIfFileScanSelected(): string {
-        return "Scan using camera directly";
+        return "直接使用摄像头扫码";
     }
 
     public static selectCamera(): string {
-        return "Select Camera";
+        return "选择摄像头";
     }
 }
 
@@ -129,10 +129,10 @@ export class Html5QrcodeScannerStrings {
 export class LibraryInfoStrings {
 
     public static builtUsing(): string {
-        return "Built using ";
+        return "使用此库构建 ";
     }
 
     public static reportIssues(): string {
-        return "Report issues";
+        return "上报问题";
     }
 }
